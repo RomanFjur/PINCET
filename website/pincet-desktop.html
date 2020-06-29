@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Студия депиляции PINCET</title>
+    <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="page-header">
+      <h1 class="visually-hidden">Студия депиляции PINCET</h1>
       <section class="page-header__contacts contacts">
         <a href="#" class="contacts__link">
           <img src="" alt="PINCET студия депиляции" class="contacts__logo">
@@ -27,7 +28,7 @@
           <div class="contacts__phones-and-worktime--phones">
             <img src="" alt="Телефон">
             <div class="phones-info">
-              <p><span></span>Звоните, мы сейчас работаем</p>
+              <p><span class="online-point"></span>Звоните, мы сейчас работаем</p>
               <p>+375 33 382 24 99</p>
             </div>
           </div>
@@ -41,15 +42,87 @@
         </button>
       </section>
       <nav class="page-header__menu">
-        
+        <button type="button" name="menu" class="menu-button mobile-button">Навигация</button>
+        <ul class="menu">
+          <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Шугаринг и депиляция воском</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Антицеллюлитный массаж</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Классический массаж</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Обучение</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Косметика для мастеров</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">О студии</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <section>
-
+    <main class="page-main">
+      <section class="services">
+        <h2 class="visually-hidden">Наши услуги это именно то, что вам нужно!</h2>
+        <p class="services__question">
+          Хотите избавиться от нежелательных волос или нужен сеанс антицеллюлитного массажа?
+        </p>
+        <ul class="services__list">
+          <li class="services__item"><span class="pink-dot"></span>
+            депиляция воском и Шугаринг;
+          </li>
+          <li class="services__item"><span class="pink-dot"></span>
+            профессиональные сертифицированные мастера;
+          </li>
+          <li class="services__item"><span class="pink-dot"></span>
+            работаем и с женщинами, и с мужчинами;
+          </li>
+          <li class="services__item"><span class="pink-dot"></span>
+            результат уже после первой процедуры.
+          </li>
+        </ul>
+        <button type="button" name="client-card" class="services-button button-pink">
+          Получить карту клиента бесплатно
+          <img src="" alt="">
+        </button>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
+      <div class="footer-wave">
+        <button type="button" name="open-fullsite" class="footer-wave__button"></button>
+        <span class="footer-wave__dot"></span>
+      </div>
     </footer>
+    <div class="parallax">
+
+    </div>
+    <div class="map-hover">
+
+    </div>
+    <div class="clientcard-hover">
+      <p class="clientcard-hover__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="enroll_popup">
+      <button type="button" name="close" class="close-enroll-popup button-close"></button>
+      <h3 class="enroll_popup__title"><b>Получите</b> программу обучения</h3>
+      <p class="enroll_popup__paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <form class="enroll_popup__form form" method="post">
+        <select class="form__list" name="courses">
+          <option value="" class="form__list__item">Повышение квалификации</option>
+          <option value="" class="form__list__item">Обучение массажу</option>
+          <option value="" class="form__list__item">Косметикаведение</option>
+        </select>
+        <input type="text" name="name" placeholder="Ваше имя">
+        <input type="tel" name="phone" placeholder="Ваш номер телефона">
+        <button type="submit" name="submit" class="form__button button_pink">
+          Получить программу
+          <img src="" alt="">
+        </button>
+      </form>
+    </div>
+    <div class="success-popup">
+      <button type="button" name="close" class="close-success-popup button-close"></button>
+      <img src="" alt="">
+      <p><b>Ваш заказ принят.</b><br />Ожидайте звонка</p>
+    </div>
   </body>
 </html>
