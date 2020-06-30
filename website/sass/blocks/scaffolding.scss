@@ -1,0 +1,73 @@
+@font-face {
+  font-weight: 100;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL_0.otf") format("otf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL_1.otf") format("otf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL_2.otf") format("otf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL_3.otf") format("otf");
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL.otf") format("otf");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: get-vw(320px);
+  margin: 0;
+  padding: 0;
+  height: 100vw;
+  width: 100vw;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-style: normal;
+  font-size: get-vw(15px);
+  color: #000000;
+  background-image: url('../img/Фон.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.mobile-button {
+  display: none;
+}

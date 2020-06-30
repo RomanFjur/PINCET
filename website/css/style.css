@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@font-face {
+  font-weight: 100;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL_0.otf") format("otf"); }
+
+@font-face {
+  font-weight: 300;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL_1.otf") format("otf"); }
+
+@font-face {
+  font-weight: 500;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL_2.otf") format("otf"); }
+
+@font-face {
+  font-weight: 700;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL_3.otf") format("otf"); }
+
+@font-face {
+  font-weight: 900;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/MUSEOSANSCYRL.otf") format("otf"); }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 16.66667vw;
+  margin: 0;
+  padding: 0;
+  height: 100vw;
+  width: 100vw;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 0.78125vw;
+  color: #000000;
+  background-image: url("../img/Фон.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.mobile-button {
+  display: none; }
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 81.25vw;
+  height: 12.5vw;
+  margin: 0 auto;
+  margin-top: 1.5625vw; }
+
+.page-header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start; }
+
+.contacts__link {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+.contacts__logo {
+  display: block;
+  width: 14.84375vw;
+  margin: 0;
+  margin-right: 1.82292vw;
+  margin-left: 0.78125vw;
+  padding: 0; }
+
+.contacts__info {
+  display: block;
+  height: 2.86458vw;
+  width: 9.63542vw;
+  margin: 0;
+  margin-right: 4.6875vw;
+  padding: 0;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-size: 0.72917vw;
+  line-height: 0.9375vw;
+  font-weight: 100; }
+
+.map-hover {
+  display: none; }
+
+.contacts__address {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  width: 15.88542vw;
+  margin: 0;
+  margin-right: 3.64583vw;
+  padding: 0; }
+  .contacts__address img {
+    display: block;
+    width: 5.72917vw;
+    height: 5.72917vw;
+    margin-right: 0.78125vw; }
+
+.contacts__address--info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .contacts__address--info p {
+    font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+    font-size: 0.83333vw;
+    line-height: 0.9375vw;
+    font-weight: 300; }
+  .contacts__address--info .adress_link {
+    font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+    color: #ff6078;
+    font-size: 0.625vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none; }
+
+.contacts__phones-and-worktime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 4.94792vw;
+  margin: 0;
+  margin-right: 2.86458vw;
+  padding: 0; }
+
+.contacts__phones-and-worktime--phones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 14.0625vw;
+  margin: 0;
+  margin-bottom: 0.78125vw;
+  padding: 0; }
+  .contacts__phones-and-worktime--phones .phone-image {
+    display: block;
+    margin: 0;
+    margin-right: 0.52083vw;
+    padding: 0;
+    width: 1.82292vw;
+    height: 1.82292vw;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 1px 0px 50px -5px #444444; }
+  .contacts__phones-and-worktime--phones .phones-info {
+    width: 11.71875vw;
+    margin: 0;
+    padding: 0; }
+    .contacts__phones-and-worktime--phones .phones-info .call {
+      display: block;
+      margin: 0;
+      padding: 0;
+      margin-left: 1.82292vw;
+      font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+      font-size: 0.625vw;
+      font-weight: 300; }
+    .contacts__phones-and-worktime--phones .phones-info .number {
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+      font-size: 1.25vw;
+      font-weight: 300; }
+
+.contacts__phones-and-worktime--time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  margin-top: -0.78125vw;
+  padding: 0; }
+  .contacts__phones-and-worktime--time .time-image {
+    display: block;
+    margin: 0;
+    margin-right: 0.52083vw;
+    padding: 0;
+    width: 1.82292vw;
+    height: 1.82292vw;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 1px 0px 50px -5px #444444; }
+  .contacts__phones-and-worktime--time p {
+    font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+    font-size: 0.83333vw;
+    font-weight: 300; }
+
+.contacts__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 12.5vw;
+  height: 3.125vw;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 1px #999999; }
+  .contacts__button p {
+    display: block;
+    margin: 0;
+    margin-left: 1.30208vw;
+    padding: 0; }
+  .contacts__button img {
+    display: block;
+    margin-left: 1.5625vw;
+    width: 1.04167vw; }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.page-main {
+  display: flex;
+  height: 34.375vw;
+  flex-direction: column; }
+
+.page-footer {
+  height: 9.89583vw;
+  background-image: url("../img/wave.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }

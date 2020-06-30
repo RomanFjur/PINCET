@@ -1,0 +1,14 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: get-vw(1560px);
+  height: get-vw(240px);
+  margin: 0 auto;
+  margin-top: get-vw(30px);
+}
+
+.page-header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

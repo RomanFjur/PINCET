@@ -1,0 +1,33 @@
+{
+  "name": "pincet",
+  "version": "1.0.0",
+  "description": "pincet web-site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanFjur/PINCET.git"
+  },
+  "keywords": [
+    "pincet"
+  ],
+  "author": "Roman Zhminko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomanFjur/PINCET/issues"
+  },
+  "homepage": "https://github.com/RomanFjur/PINCET#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "browser-sync": "^2.26.7",
+    "browser-sync-spa": "^1.0.3",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-webp": "^4.0.1"
+  }
+}

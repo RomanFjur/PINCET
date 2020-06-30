@@ -1,38 +1,38 @@
-const gulp = require('gulp'),
-      sass = require('gulp-sass'),
-      plumber = require('gulp-plumber'),
-      postcss = require('gulp-postcss'),
-      autoprefixer = require('autoprefixer'),
-      imagemin = require('gulp-imagemin'),
-      webp = require('gulp-webp'),
-      server = require('browser-sync').create();
+let gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    plumber = require('gulp-plumber'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    imagemin = require('gulp-imagemin'),
+    webp = require('gulp-webp'),
+    server = require('browser-sync').create();
 
 /* Для sass */
 gulp.task('compile-sass', function () {
-  gulp.src('./website/sass/style.sass')
+  gulp.src('./website/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('./dist/css/'))
+    .pipe(gulp.dest('./website/css/'))
     .pipe(server.stream())
-    .pipe(minify())
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('./dist/css/'));
+    .pipe(gulp.dest('./website/css/'));
+    return;
 });
 
 gulp.task('server', function () {
     server.init({
         server: './website/'
     });
-    gulp.watch('./website/sass/*.sass', gulp.parallel('compile-sass'));
+    gulp.watch('./website/sass/*.scss', gulp.parallel('compile-sass'));
     gulp.watch('./website/*.html').on('change', server.reload);
+    gulp.watch('./website/sass/*.scss').on('change', server.reload);
 });
 
 /* Task to watch less changes */
 gulp.task('watch-sass', function () {
-  gulp.watch('./website/sass/**/*.sass', gulp.parallel('compile-sass'));
+  gulp.watch('./website/sass/**/*.scss', gulp.parallel('compile-sass'));
 });
 
 /* Task when running `gulp` from terminal */

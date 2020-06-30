@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
@@ -12,33 +13,45 @@
       <h1 class="visually-hidden">Студия депиляции PINCET</h1>
       <section class="page-header__contacts contacts">
         <a href="#" class="contacts__link">
-          <img src="" alt="PINCET студия депиляции" class="contacts__logo">
+          <img src="img/Логотип.png" alt="PINCET студия депиляции" class="contacts__logo">
         </a>
-        <p class="contacts__info">Студия депиляции и массажный кабинет в Бресте</p>
+        <p class="contacts__info">Студия депиляции и<br>массажный кабинет<br> в Бресте</p>
         <div class="contacts__address">
-          <img src="" alt="Адресс">
+          <img src="img/map.png" alt="Адресс">
           <div class="contacts__address--info">
             <p>Мы находимся в центре:<br>
               г. Брест, ул. Гоголя, д.65
             </p>
-            <a href="#">Смотреть на карте</a>
+            <a href="#" class="adress_link">Смотреть на карте</a>
+            <div class="map-hover">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.26051032141!2d23.6949003154948!3d52.09319027552422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bf09f440611%3A0x80b119cbe6a5a1e6!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDYzLCDQkdGA0LXRgdGC!5e0!3m2!1sru!2sby!4v1593463400088!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
           </div>
         </div>
         <div class="contacts__phones-and-worktime">
           <div class="contacts__phones-and-worktime--phones">
-            <img src="" alt="Телефон">
+            <div class="phone-image">
+
+            </div>
             <div class="phones-info">
-              <p><span class="online-point"></span>Звоните, мы сейчас работаем</p>
-              <p>+375 33 382 24 99</p>
+              <p class="call"><span class="greendot"></span>Звоните, мы сейчас работаем</p>
+              <p class="number">
+                +375 33 382 24 99
+              </p>
             </div>
           </div>
           <div class="contacts__phones-and-worktime--time">
-            <img src="" alt="Время работы">
+            <div class="time-image">
+
+            </div>
             <p>Пн-Вс 9:00-21:00</p>
           </div>
         </div>
         <button type="button" name="enroll" class="contacts__button button-white">
-          Записаться онлайн
+          <img src="img/register.png" alt="">
+          <p>
+            Записаться онлайн
+          </p>
         </button>
       </section>
       <nav class="page-header__menu">
@@ -89,9 +102,6 @@
       </div>
     </footer>
     <div class="parallax">
-
-    </div>
-    <div class="map-hover">
 
     </div>
     <div class="clientcard-hover">
