@@ -47,8 +47,12 @@ body {
   min-width: 16.66667vw;
   margin: 0;
   padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
   height: 100vw;
   width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
   font-family: "Museo Sans Cyrl", "Arial", sans-serif;
   font-style: normal;
   font-size: 0.78125vw;
@@ -156,7 +160,7 @@ body {
         display: block;
         width: 20.83333vw;
         height: 13.02083vw;
-        top: 3.64583vw;
+        top: 3.90625vw;
         left: -10.41667vw; }
 
 .contacts__phones-and-worktime {
@@ -177,6 +181,7 @@ body {
   margin-bottom: 0.78125vw;
   padding: 0; }
   .contacts__phones-and-worktime--phones .phone-image {
+    position: relative;
     display: block;
     margin: 0;
     margin-right: 0.52083vw;
@@ -186,11 +191,24 @@ body {
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 1px 0px 50px -5px #444444; }
+    .contacts__phones-and-worktime--phones .phone-image::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0.52083vw;
+      left: 0.52083vw;
+      width: 0.78125vw;
+      height: 0.78125vw;
+      background-image: url("../img/phone.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
   .contacts__phones-and-worktime--phones .phones-info {
     width: 11.71875vw;
     margin: 0;
     padding: 0; }
     .contacts__phones-and-worktime--phones .phones-info .call {
+      position: relative;
       display: block;
       margin: 0;
       padding: 0;
@@ -198,6 +216,20 @@ body {
       font-family: "Museo Sans Cyrl", "Arial", sans-serif;
       font-size: 0.625vw;
       font-weight: 300; }
+      .contacts__phones-and-worktime--phones .phones-info .call::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0.05208vw;
+        left: -1.82292vw;
+        width: 0.52083vw;
+        height: 0.52083vw;
+        margin: 0;
+        padding: 0;
+        background-image: url("../img/greendot.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
     .contacts__phones-and-worktime--phones .phones-info .number {
       display: block;
       margin: 0;
@@ -214,6 +246,7 @@ body {
   margin-top: -0.78125vw;
   padding: 0; }
   .contacts__phones-and-worktime--time .time-image {
+    position: relative;
     display: block;
     margin: 0;
     margin-right: 0.52083vw;
@@ -223,6 +256,18 @@ body {
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 1px 0px 50px -5px #444444; }
+    .contacts__phones-and-worktime--time .time-image::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0.52083vw;
+      left: 0.52083vw;
+      width: 0.78125vw;
+      height: 0.78125vw;
+      background-image: url("../img/time.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
   .contacts__phones-and-worktime--time p {
     font-family: "Museo Sans Cyrl", "Arial", sans-serif;
     font-size: 0.83333vw;
@@ -281,7 +326,29 @@ body {
   height: 29.6875vw;
   width: 81.25vw;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box;
+  transform-style: inherit; }
+  .page-main::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    margin-top: 3.125vw;
+    padding: 0;
+    z-index: -1;
+    transform-origin: center;
+    min-height: 100vw;
+    width: 100vw;
+    background-image: url("../img/parallax.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 1s;
+    transform: translateZ(-2px) scale(3); }
 
 .page-footer {
   display: flex;

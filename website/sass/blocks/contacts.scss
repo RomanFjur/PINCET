@@ -85,7 +85,7 @@
         display: block;
         width: get-vw(400px);
         height: get-vw(250px);
-        top: get-vw(70px);
+        top: get-vw(80px);
         left: get-vw(-200px);
       }
     }
@@ -112,6 +112,7 @@
   padding: 0;
 
   .phone-image {
+    position: relative;
     display: block;
     margin: 0;
     margin-right: get-vw(10px);
@@ -121,6 +122,20 @@
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 1px 0px 50px -5px #444444;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: get-vw(10px);
+      left: get-vw(10px);
+      width: get-vw(15px);
+      height: get-vw(15px);
+      background-image: url("../img/phone.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .phones-info {
@@ -129,6 +144,7 @@
     padding: 0;
 
     .call {
+      position: relative;
       display: block;
       margin: 0;
       padding: 0;
@@ -136,6 +152,22 @@
       font-family: "Museo Sans Cyrl", "Arial", sans-serif;
       font-size: get-vw(12px);
       font-weight: 300;
+
+       &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: get-vw(1px);
+        left: get-vw(-35px);
+        width: get-vw(10px);
+        height: get-vw(10px);
+        margin: 0;
+        padding: 0;
+        background-image: url("../img/greendot.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
     }
 
     .number {
@@ -158,6 +190,7 @@
   padding: 0;
 
   .time-image {
+    position: relative;
     display: block;
     margin: 0;
     margin-right: get-vw(10px);
@@ -167,6 +200,20 @@
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 1px 0px 50px -5px #444444;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: get-vw(10px);
+      left: get-vw(10px);
+      width: get-vw(15px);
+      height: get-vw(15px);
+      background-image: url("../img/time.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   p {
