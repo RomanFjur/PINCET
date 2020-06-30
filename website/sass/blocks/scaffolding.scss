@@ -1,3 +1,8 @@
+@function get-vw($target) {
+  $vw-context: (1920*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
 @font-face {
   font-weight: 100;
   font-family: "Museo Sans Cyrl";

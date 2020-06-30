@@ -74,16 +74,12 @@ body {
   margin: 0 auto;
   margin-top: 1.5625vw; }
 
-.page-header__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
 .contacts {
   display: flex;
   flex-direction: row;
   align-items: center;
-  align-content: flex-start; }
+  align-content: flex-start;
+  margin-bottom: 1.04167vw; }
 
 .contacts__link {
   display: block;
@@ -224,7 +220,7 @@ body {
   border: none;
   border-radius: 25px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 1px #999999; }
+  box-shadow: 0px 1px 1px #ebeaea; }
   .contacts__button p {
     display: block;
     margin: 0;
@@ -238,12 +234,35 @@ body {
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  width: 81.25vw;
+  margin: 0;
+  padding: 0;
+  padding-left: 1.04167vw;
+  list-style: none;
+  background-color: #ffffff; }
+
+.menu__item .menu__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 1.04167vw;
+  padding-right: 1.04167vw;
+  padding-top: 1.04167vw;
+  padding-bottom: 1.04167vw;
+  color: #000000;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-size: 0.78125vw;
+  line-height: 0.9375vw;
+  font-weight: 100;
+  text-decoration: none; }
 
 .page-main {
   display: flex;
+  flex-direction: column;
   height: 34.375vw;
-  flex-direction: column; }
+  width: 81.25vw;
+  margin: 0 auto;
+  padding: 0; }
 
 .page-footer {
   height: 9.89583vw;
@@ -251,3 +270,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain; }
+
+.services {
+  margin-left: 5.98958vw; }
