@@ -134,7 +134,8 @@ body {
 .contacts__address--info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; }
+  align-items: flex-start;
+  position: relative; }
   .contacts__address--info p {
     font-family: "Museo Sans Cyrl", "Arial", sans-serif;
     font-size: 0.83333vw;
@@ -146,7 +147,17 @@ body {
     font-size: 0.625vw;
     font-weight: 500;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none;
+    border-bottom: 1px dashed #ff6078; }
+    .contacts__address--info .adress_link:hover {
+      cursor: pointer; }
+      .contacts__address--info .adress_link:hover + .map-hover {
+        position: absolute;
+        display: block;
+        width: 20.83333vw;
+        height: 13.02083vw;
+        top: 3.64583vw;
+        left: -10.41667vw; }
 
 .contacts__phones-and-worktime {
   display: flex;
@@ -338,29 +349,85 @@ body {
 .services {
   position: relative;
   margin-left: 5.98958vw; }
-  .services::before {
-    position: absolute;
+
+.clientcard-hover {
+  display: none; }
+
+.card-button {
+  position: absolute;
+  display: block;
+  bottom: 2.86458vw;
+  left: 38.33333vw;
+  width: 1.82292vw;
+  height: 1.82292vw;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.41667vw;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(#f8b5b5, #f2959a);
+  box-shadow: 1px 1px 0px #d7747a; }
+  .card-button span {
     display: block;
-    content: "";
-    bottom: 2.86458vw;
-    left: 38.33333vw;
-    width: 1.82292vw;
-    height: 1.82292vw;
-    border-radius: 50px;
-    background: linear-gradient(#f8b5b5, #f2959a);
-    box-shadow: 1px 1px 0px #d7747a; }
-  .services::after {
-    position: absolute;
-    display: block;
-    content: "";
-    bottom: 3.125vw;
-    left: 38.64583vw;
     width: 1.19792vw;
     height: 1.19792vw;
+    margin: 0;
+    margin-left: -0.10417vw;
+    padding: 0;
     background-image: url("../img/i.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
+  .card-button:hover {
+    cursor: pointer; }
+    .card-button:hover::after {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 1.19792vw;
+      height: 1.19792vw;
+      margin: 0;
+      padding: 0;
+      padding-right: 0.10417vw;
+      padding-left: 0.52083vw;
+      padding-top: 0.3125vw;
+      padding-bottom: 0.3125vw;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 1px 1px 0px #d7747a;
+      background: url("../img/i.png"), linear-gradient(#f8b5b5, #f2959a);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .card-button:hover > .clientcard-hover {
+      display: block;
+      position: absolute;
+      bottom: 0.72917vw;
+      left: 1.04167vw;
+      width: 5.98958vw;
+      height: 8.33333vw;
+      margin: 0;
+      padding: 0;
+      padding-left: 1.5625vw;
+      padding-right: 1.5625vw;
+      padding-bottom: 1.5625vw;
+      padding-top: 1.30208vw;
+      background-color: #ffffff;
+      border-radius: 45% 45% 5px 5px / 10% 10% 5px 5px;
+      box-shadow: 5px -5px 0px rgba(255, 255, 255, 0.3);
+      overflow: hidden; }
+
+.clientcard-hover__text {
+  display: block;
+  height: 8.33333vw;
+  width: 5.98958vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 0.72917vw; }
 
 .services__question {
   display: block;

@@ -1,33 +1,98 @@
 .services {
   position: relative;
   margin-left: get-vw(115px);
-  
-  &::before {
-    position: absolute;
+}
+
+.clientcard-hover {
+  display: none;
+}
+
+.card-button {
+  position: absolute;
+  display: block;
+  bottom: get-vw(55px);
+  left: get-vw(736px);
+  width: get-vw(35px);
+  height: get-vw(35px);
+  margin: 0;
+  padding: 0;
+  padding-left: get-vw(8px);
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(#f8b5b5, #f2959a);
+  box-shadow: 1px 1px 0px #d7747a;
+
+  span {
     display: block;
-    content: "";
-    bottom: get-vw(55px);
-    left: get-vw(736px);
-    width: get-vw(35px);
-    height: get-vw(35px);
-    border-radius: 50px;
-    background: linear-gradient(#f8b5b5, #f2959a);
-    box-shadow: 1px 1px 0px #d7747a;
-  }
-  
-  &::after {
-    position: absolute;
-    display: block;
-    content: "";
-    bottom: get-vw(60px);
-    left: get-vw(742px);
     width: get-vw(23px);
     height: get-vw(23px);
+    margin: 0;
+    margin-left: get-vw(-2px);
+    padding: 0;
     background-image: url('../img/i.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: get-vw(23px);
+      height: get-vw(23px);
+      margin: 0;
+      padding: 0;
+      padding-right: get-vw(2px);
+      padding-left: get-vw(10px);
+      padding-top: get-vw(6px);
+      padding-bottom: get-vw(6px);
+      border: none;
+      border-radius: 50px;
+      box-shadow: 1px 1px 0px #d7747a;
+      background:
+        url('../img/i.png'),
+        linear-gradient(#f8b5b5, #f2959a);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    > .clientcard-hover {
+      display: block;
+      position: absolute;
+      bottom: get-vw(14px);
+      left: get-vw(20px);
+      width: get-vw(115px);
+      height: get-vw(160px);
+      margin: 0;
+      padding: 0;
+      padding-left: get-vw(30px);
+      padding-right: get-vw(30px);
+      padding-bottom: get-vw(30px);
+      padding-top: get-vw(25px);
+      background-color: #ffffff;
+      border-radius: 45% 45% 5px 5px / 10% 10% 5px 5px;
+      box-shadow: 5px -5px 0px rgba(255, 255, 255, 0.3);
+      overflow: hidden;
+    }
+  }
+}
+
+.clientcard-hover__text {
+  display: block;
+  height: get-vw(160px);
+  width: get-vw(115px);
+  margin: 0;
+  padding: 0;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: get-vw(14px);
 }
 
 .services__question {
@@ -48,7 +113,7 @@
   margin-bottom: get-vw(50px);
   padding: 0;
   list-style: none;
-  
+
   .services__item {
     display: block;
     margin: 0;
@@ -81,7 +146,7 @@
   background: linear-gradient(#f8b5b5, #f2959a);
   box-shadow: 0px -3px 0px inset #f08c92,
               0px 3px 0px #d7747a;
-  
+
   &::before {
     position: absolute;
     display: block;
