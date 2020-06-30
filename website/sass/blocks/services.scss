@@ -1,3 +1,98 @@
 .services {
+  position: relative;
   margin-left: get-vw(115px);
+  
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: get-vw(55px);
+    left: get-vw(736px);
+    width: get-vw(35px);
+    height: get-vw(35px);
+    border-radius: 50px;
+    background: linear-gradient(#f8b5b5, #f2959a);
+    box-shadow: 1px 1px 0px #d7747a;
+  }
+  
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: get-vw(60px);
+    left: get-vw(742px);
+    width: get-vw(23px);
+    height: get-vw(23px);
+    background-image: url('../img/i.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.services__question {
+  display: block;
+  width: get-vw(650px);
+  margin: 0;
+  margin-bottom: get-vw(50px);
+  padding: 0;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: get-vw(44px);
+}
+
+.services__list {
+  display: block;
+  width: get-vw(520px);
+  margin: 0;
+  margin-bottom: get-vw(50px);
+  padding: 0;
+  list-style: none;
+  
+  .services__item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-left: get-vw(40px);
+    font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+    font-weight: 100;
+    font-size: get-vw(18px);
+    line-height: get-vw(36px);
+  }
+}
+
+.services-button {
+  position: relative;
+  display: block;
+  width: get-vw(390px);
+  margin: 0;
+  padding: 0;
+  padding-left: get-vw(45px);
+  padding-right: get-vw(165px);
+  padding-top: get-vw(25px);
+  padding-bottom: get-vw(25px);
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: get-vw(14px);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(#f8b5b5, #f2959a);
+  box-shadow: 0px -3px 0px inset #f08c92,
+              0px 3px 0px #d7747a;
+  
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: get-vw(255px);
+    width: get-vw(320px);
+    height: get-vw(80px);
+    background-image: url('../img/branch.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

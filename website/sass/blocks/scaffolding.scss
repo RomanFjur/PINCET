@@ -36,11 +36,19 @@
 }
 
 @font-face {
-  font-weight: 900;
+  font-weight: 300;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-display: swap;
   src: url("../fonts/MUSEOSANSCYRL.otf") format("otf");
+}
+
+@font-face {
+  font-weight: 100;
+  font-family: "Appetite new";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Appetite_New.otf") format("otf");
 }
 
 body {

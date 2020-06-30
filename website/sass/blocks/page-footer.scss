@@ -1,7 +1,70 @@
 .page-footer {
+  display: flex;
+  justify-content: center;
   height: get-vw(190px);
   background-image: url('../img/wave.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.footer-wave__button {
+  position: relative;
+  display: block;
+  width: get-vw(30px);
+  height: get-vw(30px);
+  margin: 0;
+  margin-top: get-vw(30px);
+  padding: 0;
+  border: 1px solid #ef8990;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: get-vw(13.5px);
+    left: get-vw(7px);
+    width: get-vw(8.5px);
+    height: get-vw(2px);
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: get-vw(13.5px);
+    left: get-vw(11.5px);
+    width: get-vw(8.5px);
+    height: get-vw(2px);
+    background-color: #000000;
+    transform: rotate(-45deg);
+  }
+}
+
+.footer-wave__dot {
+  position: relative;
+  display: block;
+  width: get-vw(8px);
+  height: get-vw(8px);
+  margin: 0;
+  margin-left: get-vw(9px);
+  margin-top: get-vw(20px);
+  padding: 0;
+  border: 1px solid #ef8990;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: get-vw(-22px);
+    left: get-vw(3px);
+    width: get-vw(2px);
+    height: get-vw(21px);
+    background-color: #ef8990;
+  }
 }

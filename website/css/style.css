@@ -28,11 +28,18 @@
   src: url("../fonts/MUSEOSANSCYRL_3.otf") format("otf"); }
 
 @font-face {
-  font-weight: 900;
+  font-weight: 300;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-display: swap;
   src: url("../fonts/MUSEOSANSCYRL.otf") format("otf"); }
+
+@font-face {
+  font-weight: 100;
+  font-family: "Appetite new";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Appetite_New.otf") format("otf"); }
 
 body {
   display: flex;
@@ -72,7 +79,8 @@ body {
   width: 81.25vw;
   height: 12.5vw;
   margin: 0 auto;
-  margin-top: 1.5625vw; }
+  margin-top: 1.5625vw;
+  margin-bottom: 4.6875vw; }
 
 .contacts {
   display: flex;
@@ -259,17 +267,156 @@ body {
 .page-main {
   display: flex;
   flex-direction: column;
-  height: 34.375vw;
+  height: 29.6875vw;
   width: 81.25vw;
   margin: 0 auto;
   padding: 0; }
 
 .page-footer {
+  display: flex;
+  justify-content: center;
   height: 9.89583vw;
   background-image: url("../img/wave.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain; }
 
+.footer-wave__button {
+  position: relative;
+  display: block;
+  width: 1.5625vw;
+  height: 1.5625vw;
+  margin: 0;
+  margin-top: 1.5625vw;
+  padding: 0;
+  border: 1px solid #ef8990;
+  border-radius: 50%;
+  background-color: #ffffff; }
+  .footer-wave__button::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0.70312vw;
+    left: 0.36458vw;
+    width: 0.44271vw;
+    height: 0.10417vw;
+    background-color: #000000;
+    transform: rotate(45deg); }
+  .footer-wave__button::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0.70312vw;
+    left: 0.59896vw;
+    width: 0.44271vw;
+    height: 0.10417vw;
+    background-color: #000000;
+    transform: rotate(-45deg); }
+
+.footer-wave__dot {
+  position: relative;
+  display: block;
+  width: 0.41667vw;
+  height: 0.41667vw;
+  margin: 0;
+  margin-left: 0.46875vw;
+  margin-top: 1.04167vw;
+  padding: 0;
+  border: 1px solid #ef8990;
+  border-radius: 50%;
+  background-color: #ffffff; }
+  .footer-wave__dot::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -1.14583vw;
+    left: 0.15625vw;
+    width: 0.10417vw;
+    height: 1.09375vw;
+    background-color: #ef8990; }
+
 .services {
+  position: relative;
   margin-left: 5.98958vw; }
+  .services::before {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 2.86458vw;
+    left: 38.33333vw;
+    width: 1.82292vw;
+    height: 1.82292vw;
+    border-radius: 50px;
+    background: linear-gradient(#f8b5b5, #f2959a);
+    box-shadow: 1px 1px 0px #d7747a; }
+  .services::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 3.125vw;
+    left: 38.64583vw;
+    width: 1.19792vw;
+    height: 1.19792vw;
+    background-image: url("../img/i.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+.services__question {
+  display: block;
+  width: 33.85417vw;
+  margin: 0;
+  margin-bottom: 2.60417vw;
+  padding: 0;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 2.29167vw; }
+
+.services__list {
+  display: block;
+  width: 27.08333vw;
+  margin: 0;
+  margin-bottom: 2.60417vw;
+  padding: 0;
+  list-style: none; }
+  .services__list .services__item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-left: 2.08333vw;
+    font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+    font-weight: 100;
+    font-size: 0.9375vw;
+    line-height: 1.875vw; }
+
+.services-button {
+  position: relative;
+  display: block;
+  width: 20.3125vw;
+  margin: 0;
+  padding: 0;
+  padding-left: 2.34375vw;
+  padding-right: 8.59375vw;
+  padding-top: 1.30208vw;
+  padding-bottom: 1.30208vw;
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 0.72917vw;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(#f8b5b5, #f2959a);
+  box-shadow: 0px -3px 0px inset #f08c92, 0px 3px 0px #d7747a; }
+  .services-button::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 13.28125vw;
+    width: 16.66667vw;
+    height: 4.16667vw;
+    background-image: url("../img/branch.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
