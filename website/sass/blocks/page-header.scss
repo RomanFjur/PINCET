@@ -7,3 +7,19 @@
   margin-top: get-vw(30px);
   margin-bottom: get-vw(90px);
 }
+
+@media (max-width: $minimal-desktop-width) {
+  .page-header {
+    width: 960px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    width: 720px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}

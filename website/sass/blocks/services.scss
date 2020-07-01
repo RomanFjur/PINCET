@@ -38,40 +38,16 @@
   &:hover {
     cursor: pointer;
 
-    &::after {
-      position: absolute;
-      display: block;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: get-vw(23px);
-      height: get-vw(23px);
-      margin: 0;
-      padding: 0;
-      padding-right: get-vw(2px);
-      padding-left: get-vw(10px);
-      padding-top: get-vw(6px);
-      padding-bottom: get-vw(6px);
-      border: none;
-      border-radius: 50px;
-      box-shadow: 1px 1px 0px #d7747a;
-      background:
-        url('../img/i.png'),
-        linear-gradient(#f8b5b5, #f2959a);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-
     > .clientcard-hover {
       display: block;
       position: absolute;
       bottom: get-vw(14px);
       left: get-vw(20px);
-      width: get-vw(115px);
-      height: get-vw(160px);
+      width: get-vw(175px);
+      height: get-vw(220px);
       margin: 0;
       padding: 0;
+      z-index: -1;
       padding-left: get-vw(30px);
       padding-right: get-vw(30px);
       padding-bottom: get-vw(30px);
@@ -115,6 +91,7 @@
   list-style: none;
 
   .services__item {
+    position: relative;
     display: block;
     margin: 0;
     padding: 0;
@@ -124,44 +101,29 @@
     font-size: get-vw(18px);
     line-height: get-vw(36px);
 
-    .pink-dot {
-      
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: get-vw(5px);
+      left: get-vw(5px);
+      width: get-vw(25px);
+      height: get-vw(25px);
+      margin: 0;
+      padding: 0;
+      background:
+        url('../img/pinkdot.png'),;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }
 
 .services-button {
-  position: relative;
-  display: block;
-  width: get-vw(390px);
   margin: 0;
-  padding: 0;
   padding-left: get-vw(45px);
   padding-right: get-vw(165px);
   padding-top: get-vw(25px);
   padding-bottom: get-vw(25px);
-  color: #ffffff;
-  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
-  font-weight: 100;
-  font-size: get-vw(14px);
-  text-transform: uppercase;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(#f8b5b5, #f2959a);
-  box-shadow: 0px -3px 0px inset #f08c92,
-              0px 3px 0px #d7747a;
-
-  &::before {
-    position: absolute;
-    display: block;
-    content: "";
-    top: 0;
-    left: get-vw(255px);
-    width: get-vw(320px);
-    height: get-vw(80px);
-    background-image: url('../img/branch.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }

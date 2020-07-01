@@ -17,8 +17,7 @@ gulp.task('compile-sass', function () {
     ]))
     .pipe(gulp.dest('./website/css/'))
     .pipe(server.stream())
-    .pipe(gulp.dest('./website/css/'));
-    return;
+    .pipe(gulp.dest('./dist/css/'));
 });
 
 gulp.task('server', function () {

@@ -57,12 +57,8 @@ body {
   min-width: get-vw(320px);
   margin: 0;
   padding: 0;
-  perspective: 1px;
-  transform-style: preserve-3d;
   height: 100vw;
   width: 100vw;
-  overflow-y: scroll;
-  overflow-x: hidden;
   font-family: "Museo Sans Cyrl", "Arial", sans-serif;
   font-style: normal;
   font-size: get-vw(15px);
@@ -87,4 +83,38 @@ body {
 
 .mobile-button {
   display: none;
+}
+
+.button-pink {
+  position: relative;
+  display: block;
+  width: get-vw(390px);
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: get-vw(14px);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(#f8b5b5, #f2959a);
+  box-shadow: 0px -3px 0px inset #f08c92,
+              0px 3px 0px #d7747a;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: get-vw(255px);
+    width: get-vw(320px);
+    height: get-vw(80px);
+    background-image: url('../img/branch.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }

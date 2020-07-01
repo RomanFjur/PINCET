@@ -74,16 +74,16 @@
           Хотите избавиться от <br> нежелательных волос <br> или нужен сеанс <br> антицеллюлитного массажа?
         </p>
         <ul class="services__list">
-          <li class="services__item"><span class="pink-dot"></span>
+          <li class="services__item">
             депиляция воском и Шугаринг;
           </li>
-          <li class="services__item"><span class="pink-dot"></span>
+          <li class="services__item">
             профессиональные сертифицированные мастера;
           </li>
-          <li class="services__item"><span class="pink-dot"></span>
+          <li class="services__item">
             работаем и с женщинами, и с мужчинами;
           </li>
-          <li class="services__item"><span class="pink-dot"></span>
+          <li class="services__item">
             результат уже после первой процедуры.
           </li>
         </ul>
@@ -94,7 +94,7 @@
           <span></span>
           <div class="clientcard-hover">
             <p class="clientcard-hover__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             </p>
           </div>
         </button>
@@ -110,17 +110,25 @@
       <button type="button" name="close" class="close-enroll-popup button-close"></button>
       <h3 class="enroll_popup__title"><b>Получите</b> программу обучения</h3>
       <p class="enroll_popup__paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
       </p>
       <form class="enroll_popup__form form" method="post">
-        <select class="form__list" name="courses">
-          <option value="" class="form__list__item">Повышение квалификации</option>
-          <option value="" class="form__list__item">Обучение массажу</option>
-          <option value="" class="form__list__item">Косметикаведение</option>
-        </select>
+        <div class="select" data-state="">
+          <div class="select__title" data-default="Option 0">Повышение квалификации</div>
+          <div class="select__content">
+            <input id="singleSelect0" class="select__input" type="radio" name="singleSelect" checked />
+            <label for="singleSelect0" class="select__label">Повышение квалификации</label>
+            <input id="singleSelect1" class="select__input" type="radio" name="singleSelect" />
+            <label for="singleSelect1" class="select__label">Повышение квалификации</label>
+            <input id="singleSelect2" class="select__input" type="radio" name="singleSelect" />
+            <label for="singleSelect2" class="select__label">Курсы массажа</label>
+            <input id="singleSelect3" class="select__input" type="radio" name="singleSelect" />
+            <label for="singleSelect3" class="select__label">Консультирование</label>
+          </div>
+        </div>
         <input type="text" name="name" placeholder="Ваше имя">
         <input type="tel" name="phone" placeholder="Ваш номер телефона">
-        <button type="submit" name="submit" class="form__button button_pink">
+        <button type="submit" name="submit" class="form__button button-pink">
           Получить программу
           <img src="" alt="">
         </button>
@@ -131,5 +139,6 @@
       <img src="" alt="">
       <p><b>Ваш заказ принят.</b><br />Ожидайте звонка</p>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

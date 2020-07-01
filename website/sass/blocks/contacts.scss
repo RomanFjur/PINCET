@@ -87,6 +87,7 @@
         height: get-vw(250px);
         top: get-vw(80px);
         left: get-vw(-200px);
+        z-index: 1;
       }
     }
   }
@@ -247,5 +248,9 @@
     display: block;
     margin-left: get-vw(30px);
     width: get-vw(20px);
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }

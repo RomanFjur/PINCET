@@ -1,0 +1,70 @@
+.success-popup {
+  display: none;
+  position: fixed;
+  top: get-vw(300px);
+  left: 50vw;
+  margin: 0;
+  margin-left: get-vw(-260px);
+  padding-left: get-vw(50px);
+  padding-right: get-vw(55px);
+  padding-top: get-vw(20px);
+  padding-bottom: get-vw(5px);
+  width: get-vw(520px);
+  height: get-vw(340px);
+  box-sizing: border-box;
+  background-image: url("../img/success.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50px;
+  
+  p {
+    display: block;
+    position: relative;
+    margin-top: get-vw(155px);
+    font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+    font-style: normal;
+    font-size: get-vw(30px);
+    text-align: center;
+    font-weight: 100;
+    
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: get-vw(-110px);
+      left: get-vw(160px);
+      width: get-vw(91px);
+      height: get-vw(91px);
+      background-image: url("../img/happy.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.success-popup__show {
+  display: block;
+}
+
+.close-success-popup {
+  position: absolute;
+  display: block;
+  border: none;
+  width: get-vw(15px);
+  height: get-vw(15px);
+  top: get-vw(50px);
+  right: get-vw(50px);
+  margin: 0;
+  padding: 0;
+  background-color: none;
+  background-image: url('../img/close.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
